@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9</title>
+</head>
+<body onload="handle()">
+
+</body>
+</html>
+<script>
+    function handle(){
+        let a=prompt("điền chuỗi")
+        let a1=a.split(',')
+        let b=prompt("nhập số")
+        let count=0
+        for (let i = 0; i < a1.length; i++) {
+            if (b===a1[i]){
+                count++
+            }
+        }    if(count===0){
+            alert(`không tồn tại kí tự${b}`)
+        }
+        alert(`số lần xuất hiện của kí tự ${b} là${count}`)
+    }
+</script>

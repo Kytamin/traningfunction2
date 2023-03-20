@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+</head>
+<body>
+
+</body>
+<script>
+    let input=prompt("điền vào đây mảng số nguyên")
+    let array=input.split(',')
+    let array1=[]
+    function swapnum(array){
+        for (let i = array.length-1; i >=0; i--) {
+             array1.push(array[i])
+        }
+        return array1
+    }
+    alert(swapnum(array))
+</script>
+</html>
